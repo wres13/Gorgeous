@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dongdian.jj.gorgeous.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:id="@+id/ig_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ib_home"
+                style="@style/MainRadioButton"
+                android:text="@string/main_home_btn" />
+
+            <RadioButton
+                android:id="@+id/ib_category"
+                style="@style/MainRadioButton"
+                android:text="@string/main_category_btn" />
+
+            <RadioButton
+                style="@style/MainRadioButton"
+                tools:text="首页" />
+
+            <RadioButton
+                style="@style/MainRadioButton"
+                tools:text="首页" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/iv_main"
+            android:layout_alignBaseline="@+id/ig_main"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
