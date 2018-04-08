@@ -66,15 +66,11 @@ public class SplashActivity extends AppCompatActivity {
                     @Override
                     public void call(Long aLong) {
                         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                            Fade fade = new Fade();
-                            fade.setDuration(getResources().getInteger(R.integer.splash_fade_animation_time));
-                            getWindow().setExitTransition(fade);
-                            ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(SplashActivity.this);
-                            startActivity(intent, activityOptions.toBundle());
-                        } else {
-                            startActivity(intent);
-                        }
+                        Fade fade = new Fade();
+                        fade.setDuration(getResources().getInteger(R.integer.splash_fade_animation_time));
+                        getWindow().setExitTransition(fade);
+                        ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(SplashActivity.this);
+                        startActivity(intent, activityOptions.toBundle());
                     }
                 });
     }
