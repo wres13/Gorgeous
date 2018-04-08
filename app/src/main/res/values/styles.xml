@@ -19,5 +19,7 @@
         <item name="android:button">@null</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/selector_main_btn_color</item>
+        <item name="android:drawablePadding">2dp</item>
     </style>
 </resources>

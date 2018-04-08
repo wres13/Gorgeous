@@ -27,11 +27,14 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:drawableTop="@drawable/selector_main_home_btn"
                 android:id="@+id/ib_home"
                 style="@style/MainRadioButton"
+                android:checked="true"
                 android:text="@string/main_home_btn" />
 
             <RadioButton
+                android:drawableTop="@drawable/selector_main_category_btn"
                 android:id="@+id/ib_category"
                 style="@style/MainRadioButton"
                 android:text="@string/main_category_btn" />
